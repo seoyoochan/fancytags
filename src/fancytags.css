@@ -1,0 +1,49 @@
+.fancyTags {
+	height: 35px;
+}
+
+.fancyTagsInput {
+	position: relative;
+	display: inline-block;
+	width: 100px;
+	height: inherit;
+	cursor: text;
+	color: #666;
+	font-size: 14px;
+}
+
+.tag {
+	line-height: 23px;
+	display: inline-block;
+	font-weight: 400;
+	font-style: normal;
+	color: rgba(0,0,0,0.6);
+	font-size: 13px;
+	letter-spacing: 0;
+	text-transform: none;
+	text-decoration: none;
+	border: 1px solid #f0f0f0;
+	padding: 3px 10px;
+	margin-right: 8px;
+	background: #fafafa;
+}
+
+.tag:last-child {
+	margin-right :0;
+}
+
+.tag:hover {
+	color: #388ACD;
+	border-color: #388ACD;
+	background-color: rgba(56, 138, 205, 0.2);
+	-moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	-webkit-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+}
+
+.tag.selected {
+	color: #388ACD;
+	border-color: #388ACD;
+	background-color: rgba(56, 138, 205, 0.2);
+}
