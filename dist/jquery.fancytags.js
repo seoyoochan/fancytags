@@ -1,4 +1,12 @@
 /*
+ *  jquery-boilerplate - v3.5.0
+ *  A jump-start for jQuery plugins development.
+ *  http://jqueryboilerplate.com
+ *
+ *  Made by Zeno Rocha
+ *  Under MIT License
+ */
+/*
 	jQuery FancyTags Plugin
 	@name: jquery.fancytags.js
 	@author: Seo Yoochan (supergnee@gmail.com, https://twitter.com/seoyoochan)

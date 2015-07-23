@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <head>
 	<title>Fancy Tags</title>
-	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="./src/jquery.fancytags.js"></script>
-	<link rel="stylesheet" type="text/css" href="./src/fancytags.css" />
-	<script>
-		$(function(){
-			$(".fancyTagsInput").fancytags({focus: true});
-		});
-	</script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../src/jquery.fancytags.js"></script>
+	<link rel="stylesheet" type="text/css" href="../src/fancytags.css" />
 	<style type="text/css">
 		.container {
 			padding: 20px;
@@ -22,8 +17,20 @@
 <body>
 	<div class="container">
 		<div class="fancyTags">
+			<!-- these are predefined taglist which 
+			fakes reading tags from server and display. 
+			Although they were predefined, they can be removed -->
+			<span class="tag">apple</span>
+			<span class="tag">orange</span>
+			<span class="tag">banana</span>
+			<span class="tag">grape</span>
 			<div class="fancyTagsInput"></div>
 		</div>
 	</div>
+	<script>
+		$(function(){
+			$(".fancyTagsInput").fancytags({focus: true});
+		});
+	</script>
 </body>
 </html>
