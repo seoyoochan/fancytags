@@ -100,7 +100,6 @@
 								var sanitisedValue = e.target.childNodes[0].data.replace(/(^,)|(,$)/g, "");
 								taglist.push(sanitisedValue);
 								createTagItem(e, target, taglist);
-								console.log(sanitisedValue);
 							}
 						}
 
@@ -124,19 +123,6 @@
 					  	if ((keycode === 8) || (keycode === 48)){
 
 					  		if (!e.target.hasChildNodes()){
-
-					  			// if (predefinedLastTagItem === null) {
-						  		// 	// Check if pre-defined taglist exists
-						  		// 	if (predefinedTagList.length > 0){
-						  		// 		predefinedLastTagItem = predefinedTagList.pop();
-						  		// 		var classname = predefinedLastTagItem.className;
-						  		// 		predefinedLastTagItem.className = classname + " selected";
-						  		// 	}
-					  			// } else {
-					  			// 	predefinedLastTagItem.parentNode.removeChild(predefinedLastTagItem);
-					  			// 	predefinedLastTagItem = null;
-					  			// }
-
 
 					  			// Check if selected tag for removal exists
 						  		if (lastTagItem === null) {
