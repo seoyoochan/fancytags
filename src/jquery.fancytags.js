@@ -53,15 +53,16 @@
 						// and this.settings
 						// you can add more functions like the one below and
 						// call them like so: this.yourOtherFunction(this.element, this.settings).
-						this.main();
+						this.main(this.element, this.settings);
 
 				},
-				main: function () {
-					this.attr("contenteditable", true);
-					this.attr("tabindex", -1);
+				main: function (element, settings) {
 
-					if (this.settings.focus){
-						this.focus();
+					$(element).attr("contenteditable", true);
+					$(element).attr("tabindex", -1);
+
+					if (settings.focus){
+						$(element).focus();
 					}
 
 					var chars = "";
@@ -70,7 +71,7 @@
 					var lastTagItem = null;
 
 
-					this.on("keypress", function(e){
+					$(element).on("keypress", function(e){
 
 					  	var keycode = e.which || e.keyCode;
 					  	var target = e.target || e.srcElement;
@@ -91,7 +92,7 @@
 						
 					});
 
-					this.on("keyup", function(e){
+					$(element).on("keyup", function(e){
 					  	var keycode = e.which || e.keyCode;
 					  	var target = e.target || e.srcElement;
 
@@ -101,7 +102,7 @@
 
 					});
 
-					this.on("keydown", function(e){
+					$(element).on("keydown", function(e){
 						var keycode = e.which || e.keyCode;
 					  	var target = e.target || e.srcElement;
 
@@ -129,7 +130,7 @@
 						tag = taglist.shift();
 						var span = document.createElement("span");
 						var tagNode = document.createTextNode(tag);
-						span.className = this.settings.tagItemClassName;
+						span.className = settings.tagItemClassName;
 						span.appendChild(tagNode);
 						fancyTagList.push(span);
 						target.parentNode.insertBefore(span, target);
