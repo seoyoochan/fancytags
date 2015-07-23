@@ -10,7 +10,7 @@
 	jQuery FancyTags Plugin
 	@name: jquery.fancytags.js
 	@author: Seo Yoochan (supergnee@gmail.com, https://twitter.com/seoyoochan)
-	@version: 1.0
+	@version: 1.0.2
 	@date: 07/23/2015
 	@category: jQuery Plugin
 	@copyright: (c) 2015 Seo Yoochan (www.seoyoochan.com)
